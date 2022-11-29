@@ -1,0 +1,42 @@
+// Variable overrides first
+$primary: #F68BE0;
+$secondary: #F7C407;
+$success: #FF6A00;
+$light: #FFFFFF;
+$dark: #000000;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "light":      $light,
+  "dark":       $dark
+);
+
+.modal-backdrop {
+  z-index: 1 !important;
+}
+
+
+/* scrollbarrdd  */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid #f5f5f5;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6A00;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d25802;
+}
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
